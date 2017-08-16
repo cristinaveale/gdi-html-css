@@ -6,20 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Cristina Veale Portfolio</title> <!--The <title> element defines the title of the document, and is required in all HTML/XHTML documents.-->
+        <link rel="stylesheet" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    <body>
-        <section> <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
+    <body id="main-container">
+        <header id="intro"> <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags-->
             <img src="../assets/html-tag.svg" alt="closing html tag logo"> <!--The <img> tag defines an image in an HTML page. It has two required attributes: src and alt. "Src" specifies the URL of an image. "Alt" specifies an alternate text for an image-->
             <h4>hello! i am Cristina, a</h4> <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
             <h2>UX + UI DEVELOPER.</h2>
-        </section>
-        <section>
+        </header>
+        <section id="purpose"> <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
             <p>i can help you build easy-to-use, beautiful products.</p> <!--The <p> tag defines a paragraph. -->
             <p>from sketching out the flow, to quick prototypes, or final assets.</p>
             <img src="../assets/monitor.svg" alt="monitor icon"> <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
             <img src="../assets/smartphone.svg" alt="smartphone icon">
         </section>
-        <section>
+        <section id="about-me">
             <img src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
             <img src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
             <p>i currently work as a consultant at 
@@ -29,7 +31,7 @@
                 <a href="https://www.cardinalsolutions.com/">Girl Develop It</a>
             </p>
         </section>
-        <section>
+        <section id="call-to-action">
             <p>i am always looking for exciting projects to work on </p>
             <p>both freelance and consulting.</p>
             <button type="button" name="email"> 
@@ -37,13 +39,13 @@
             </button> 
             <!--The <button> tag defines a clickable button.Type specifies what type of button it is.The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript. The mailto: link activates the default mail client on the computer for sending an e-mail. The subject defines what will go in the subject header. Spaces between words should be replaced by %20 to ensure that the browser will display the text properly. Target specifies where to open the linked document, in this case we want it to open in the full body of the window.-->
         </section>
-        <section>
+        <footer id="social-media">
             <ul> <!--An unordered list will give you a bulleted list. An <ol> will give you an ordered numbered list. -->
                 <li>Follow me on</li> <!-- li stands for list items within your unordered list. These are the bullet points which we will format using CSS -->
                 <li><a href="https://twitter.com/cristina_veale">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/in/cristinaveale/">LinkedIn</a></li>
                 <li><a href="https://www.meetup.com/members/182628468/">Meetup</a></li>
             </ul>
-        </section>
+        </footer>
     </body>
 </html>

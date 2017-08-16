@@ -1,0 +1,24 @@
+#main-container {
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#intro {
+    border: 2px solid orange;
+}
+
+#purpose {
+    border: 2px solid yellow;
+}
+
+#about-me {
+    border: 2px solid green;
+}
+
+#call-to-action {
+    border: 2px solid blue;
+}
+
+#social-media {
+    border: 2px solid purple;
+}
