@@ -7,33 +7,43 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Cristina Veale Portfolio</title> <!--The <title> element defines the title of the document, and is required in all HTML/XHTML documents.-->
         <link rel="stylesheet" href="../css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
     </head>
     <body id="main-container">
         <header id="intro"> <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags-->
             <img src="../assets/html-tag.svg" alt="closing html tag logo"> <!--The <img> tag defines an image in an HTML page. It has two required attributes: src and alt. "Src" specifies the URL of an image. "Alt" specifies an alternate text for an image-->
-            <h4>hello! i am Cristina, a</h4> <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
+            <h1>hello! i am Cristina, a</h1> <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
             <h2>UX + UI DEVELOPER.</h2>
         </header>
         <section id="purpose"> <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
-            <p>i can help you build easy-to-use, beautiful products.</p> <!--The <p> tag defines a paragraph. -->
-            <p>from sketching out the flow, to quick prototypes, or final assets.</p>
-            <img src="../assets/monitor.svg" alt="monitor icon"> <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
-            <img src="../assets/smartphone.svg" alt="smartphone icon">
+            <div class="purpose-texts">
+                <p>i can help you build easy-to-use, beautiful products.</p> <!--The <p> tag defines a paragraph. -->
+                <p>from sketching out the flow, to quick prototypes, or final assets.</p>
+            </div>
+            <div class="purpose-icons">
+                <img class="monitor-icon" src="../assets/monitor.svg" alt="monitor icon"> <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
+                <img class="smartphone-icon" src="../assets/smartphone.svg" alt="smartphone icon">
+            </div>
         </section>
         <section id="about-me">
-            <img src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
-            <img src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
-            <p>i currently work as a consultant at 
-                <a href="https://www.cardinalsolutions.com/">Cardinal Solutions</a> <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.-->
-            </p> 
-            <p>i’m also a chapter leader for the non-profit group ~ 
-                <a href="https://www.cardinalsolutions.com/">Girl Develop It</a>
-            </p>
+            <div class="about-icons">
+                <img class="cardinal-logo" src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
+                <img class="gdi-logo" src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
+            </div>
+            <div class="about-texts">
+                <p>i currently work as a consultant for 
+                    <a class="cs-link" href="https://www.cardinalsolutions.com/">Cardinal Solutions</a> <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.-->
+                </p> 
+                <p>i’m also the Charlotte chapter leader for the non-profit group ~ 
+                    <a class="gdi-link" href="https://www.cardinalsolutions.com/">Girl Develop It</a>
+                </p>
+            </div>
         </section>
         <section id="call-to-action">
-            <p>i am always looking for exciting projects to work on </p>
-            <p>both freelance and consulting.</p>
+            <div class="action-texts">
+                <p>i am always looking for exciting projects to work on </p>
+                <p>both freelance and consulting.</p>
+            </div>
             <button type="button" name="email"> 
                 <a href="mailto:cristinaveale@gmail.com?Subject=Let's%20Connect" target="_top">Get in touch ></a> 
             </button> 

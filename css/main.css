@@ -1,23 +1,111 @@
 #main-container {
     border: 1px solid red;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.08px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #intro {
     border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 6em 0;
 }
 
 #purpose {
+    align-items: center;
     border: 2px solid yellow;
+    background-color: #BA9AFB;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 6em 0;
+}
+
+.purpose-texts {
+  width: 320px;
+  margin-right: 7em;
+}
+
+.smartphone-icon {
+    position: relative;
+    right: 50px;
 }
 
 #about-me {
+    align-items: center;
     border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 6em 0;
+}
+
+.cardinal-logo, .gdi-logo {
+  height: 150px;
+  position: relative;
+}
+
+.cardinal-logo {
+  bottom: 35px;
+}
+.gdi-logo {
+  top: 35px;
+}
+
+.about-texts {
+  margin-left: 7em;
+  width: 320px;
+  text-align: right;
+}
+
+.cs-link {
+  color: #2984D0;
+  text-decoration: none;
+}
+
+.gdi-link {
+ color: #F05C61;
+ text-decoration: none; 
 }
 
 #call-to-action {
+    align-items: center;
     border: 2px solid blue;
+    background-color: #BA9AFB;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 6em 0;
 }
+
+.action-texts {
+  width: 320px;
+  text-align: center;
+}
+
+button {
+  border-style: none;
+  padding: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: white;
+}
+
+button>a {
+  text-decoration: none;
+  color: #BA9AFB;
+  font-weight: 500;
+}
+
 
 #social-media {
     border: 2px solid purple;
