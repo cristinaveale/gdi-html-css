@@ -20,28 +20,31 @@
     <!--BEGIN CONTENT-->
 
     <!--Talk about ID's and Classes during CSS portion -->
-    <body id="main-container"> <!--The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc... IDs are used for elements that appear on the page a single time (like a wrapper).-->
-        <header id="intro"> <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags. --> 
+    <body> <!--The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc... IDs are used for elements that appear on the page a single time (like a wrapper).-->
+
+        <header class="intro"> <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags. --> 
             <a href="main.html"><img src="../assets/html-tag.svg" alt="closing html tag logo"></a> <!--The <img> tag defines an image in an HTML page. It has two required attributes: src and alt. "Src" specifies the URL of an image. "Alt" specifies an alternate text for an image-->
             <h1>hello! i am Cristina, a</h1> <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
-            <h2>UX + UI DEVELOPER.</h2>
+            <h2>UX + UI DEVELOPER</h2>
         </header>
-        <section id="purpose"> <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
-            <div class="purpose-texts">
-                <p>i can help you build easy-to-use, beautiful products.</p> <!--The <p> tag defines a paragraph. -->
-                <p>from sketching out the flow, to quick prototypes, or final assets.</p>
+
+        <section class="flex-grid purpose">
+            <div class="col">
+                <p>i can help you build easy-to-use, beautiful products</p> <!--The <p> tag defines a paragraph. -->
+                <p>from sketching out the flow, to quick prototypes, or final assets</p>
             </div>
-            <div class="purpose-icons">
+            <div class="col">
                 <img class="monitor-icon" src="../assets/monitor.svg" alt="monitor icon"> <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
                 <img class="smartphone-icon" src="../assets/smartphone.svg" alt="smartphone icon">
             </div>
         </section>
-        <section id="about-me">
-            <div class="about-icons">
+
+        <section class="flex-grid about-me">
+            <div class="col">
                 <img class="cardinal-logo" src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
                 <img class="gdi-logo" src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
             </div>
-            <div class="about-texts">
+            <div class="col">
                 <p>i currently work as a consultant for 
                     <a class="cs-link" href="https://www.cardinalsolutions.com/">Cardinal Solutions</a> <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.-->
                 </p> 
@@ -50,10 +53,11 @@
                 </p>
             </div>
         </section>
-        <section id="call-to-action">
+
+        <section class="call-to-action">
             <div class="action-texts">
-                <p>i am always looking for exciting projects to work on </p>
-                <p>both freelance and consulting.</p>
+                <p>i am always looking for exciting projects to work on</p>
+                <p>both freelance and consulting</p>
             </div>
             <a href="mailto:cristinaveale@gmail.com?Subject=Let's%20Connect" target="_top">
                 <button type="button" name="email">Get in touch ></button>
@@ -61,9 +65,7 @@
             <!--The <button> tag defines a clickable button.Type specifies what type of button it is.The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript. The mailto: link activates the default mail client on the computer for sending an e-mail. The subject defines what will go in the subject header. Spaces between words should be replaced by %20 to ensure that the browser will display the text properly. Target specifies where to open the linked document, in this case we want it to open in the full body of the window.-->
         </section>
 
-        <!--END CONTENT-->
-
-        <footer id="social-media"> <!--The <footer> tag defines a footer for a document or section. They usually contain authorship information, contact info, etc.-->
+        <footer class="social-media"> <!--The <footer> tag defines a footer for a document or section. They usually contain authorship information, contact info, etc.-->
             <ul class="social-media-list"> <!--An unordered list will give you a bulleted list. An <ol> will give you an ordered numbered list. Always use unordered lists for link lists shown below. -->
                 <li>Follow me on</li> <!-- li stands for list items within your unordered list. These are the bullet points which we will format using CSS -->
                 <li><a href="https://twitter.com/cristina_veale">Twitter</a></li>
