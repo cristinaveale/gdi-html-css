@@ -2,43 +2,45 @@
 
 
 /* Universal Styling */
+
 html, body {
 	padding: 0;
   margin: 0; /* Set margin and padding to 0 to take away default margins and padding that the browser adds. This makes the design look closer to the same cross browser. Look at the Box Model slide for more info. */
   font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Show how to import fonts from https://fonts.google.com/ */
   /* Default fonts, this is a web safe font stack. Font stacks typically contain 3-4 fonts*/ /* On the note of the sans-serif... Pairing serifs with sans-serifs are basic guidelines for design.*/
+  font-size: 62.5%; /* Best practice for accessibility. More info on this can be found in Resources slide. 62.5% of 16px (typical default browser font-size) is 10px. So if we wanted to set our font size to 2rems that now equals 20 pixels */
   color: #202020; /* Hex colors that have two alternating values are always gray! The higher the numbers get, the lighter the color. Try to use an online contrast checker to make sure the colors you choose pass contrast guidelines for easy reading and universal usability.*/
-  letter-spacing: 1.08px; /*letter-spacing, usually called tracking by typographers, refers to a consistent degree of increase (or sometimes decrease) of space between letters*/
 }
 
-.flex-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Flexbox is a new layout mode in CSS3. Let's take an in-depth look with our slides */
+.flex-grid { /* This is our "flexbox container" */
+  display: flex; 
+  justify-content: center; /*This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.*/
+  align-items: center; /* This defines the default behaviour for how flex items are laid out along the cross axis on the current line */
 }
 
-.col {
-  padding: 5em 2em 5em 2em;
+.col { /* These are our flexbox items. This is because they are direct descendants of our flexbox container (.flex-grid) */
+  padding: 5em 2em 5em 2em; /* padding has four properties, top right, bottom, left, in that order. Just think of this as setting your padding going clockwise. Here we're saying the top and bottom have a padding of 5em, and left/right have 2ems; */
+  font-size: 1.4rem;
 }
 
 .intro,
-.call-to-action {
+.call-to-action { /*DRY coding means, Don't Repeat Yourself. Here we're using the same styles to apply to our intro and call-to-action class. You can target multiple selectors by separating them with a comma. */
   align-items: center;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: column; /* Flex direction by default is a row so here we're setting it as a column */
   justify-content: center;
-  padding: 5em 2em;
+  padding: 5em 2em; /* A quicker way to target padding top and bottom is by grouping them. This is giving the exact padding as .col above. */
 }
 
 
 /* Intro Section */
-.intro>h1 {
-  font-size: 25px;
+.intro > h1 { /* The greater than sign is a type of selector which says that ONLY the H1 that is directly a child of the intro class will receive this styling. Other H1's would not be affected. */
+  font-size: 2rem; 
 }
 
-.intro>h2 {
-  font-size: 35px;
+.intro > h2 {
+  font-size: 2.5rem; 
   line-height: 0;
 }
 
@@ -93,6 +95,7 @@ html, body {
 /* Call to Action Section */
 .call-to-action {
   background-color: #BA9AFB;
+  font-size: 1.4rem;
 }
 
 .call-to-action>a {
@@ -132,7 +135,7 @@ button {
 }
 
 .social-media-list>li {
-  font-size: 10px;
+  font-size: .9rem;
   margin: 5px;
 }
 
