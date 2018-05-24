@@ -1,81 +1,107 @@
-<!DOCTYPE html> <!--DOCTYPE specifies to the DOM what type of document it's rendering. In this case, it's HTML-->
-<html lang="en"> <!-- lang="en" is telling our browser to expect English characters.-->
-    <head>
-        <!--<meta> element is used to specify which character set is used, page description, keywords, author, and other metadata. Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="Portfolio page for Cristina Veale" /> <!-- For SEO -->
-        <meta name="author" content="Cristina Veale" /> <!-- Designates you as the author of the page; good for SEO. There is actually a way to link your Google+ profile with your website so your name shows up as the author in search results... If you have a blog or personal website or write articles, then it might be helpful! -->
-        <title>Cristina Veale Portfolio</title> <!--The <title> element defines the title of the document, and is required in all HTML/XHTML documents. You'll see this title appear at the top tab of your browser. -->
+<!DOCTYPE html>
+<!--DOCTYPE specifies to the DOM what type of document it's rendering. In this case, it's HTML-->
+<html lang="en">
+<!-- lang="en" is telling our browser to expect English characters.-->
 
-            <!-- Let's display this title in our browser. From your desktop, open up your project folder. Right click "main.html" > open with > browser of choice. Here you'll see the title appear, but nothing else on the page. -->
+<head>
+    <!--<meta> element is used to specify which character set is used, page description, keywords, author, and other metadata. Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio page for Cristina Veale" />
+    <!-- For SEO -->
+    <meta name="author" content="Cristina Veale" />
+    <!-- Designates you as the author of the page; good for SEO. There is actually a way to link your Google+ profile with your website so your name shows up as the author in search results... If you have a blog or personal website or write articles, then it might be helpful! -->
+    <title>Cristina Veale Portfolio</title>
+    <!--The <title> element defines the title of the document, and is required in all HTML/XHTML documents. You'll see this title appear at the top tab of your browser. -->
 
-            <!-- SKIP THIS and go back to the slideshow-->
-        <link rel="stylesheet" href="../css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
-            <!--SKIP THIS-->
-    </head>
+    <!-- Let's display this title in our browser. From your desktop, open up your project folder. Right click "main.html" > open with > browser of choice. Here you'll see the title appear, but nothing else on the page. -->
 
-    <!--BEGIN CONTENT-->
+    <!-- SKIP THIS and go back to the slideshow-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
+    <!--SKIP THIS-->
+</head>
 
-    <!-- put in classes for now but state we'll talk about ID's and Classes during the CSS portion -->
-    <body> <!--The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc... IDs are used for elements that appear on the page a single time (like a wrapper).-->
+<!--BEGIN CONTENT-->
 
-        <header class="intro"> <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags. --> 
-            <a href="main.html"><img src="../assets/html-tag.svg" alt="closing html tag logo"></a> <!--The <img> tag defines an image in an HTML page. It has two required attributes: src and alt. "Src" specifies the URL of an image. "Alt" specifies an alternate text for an image-->
-            <h1>hello! i am Cristina, a</h1> <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
-            <h2>UX + UI DEVELOPER</h2>
-        </header>
+<!-- put in classes for now but state we'll talk about ID's and Classes during the CSS portion -->
 
-        <section class="flex-grid purpose">
-            <div class="col">
-                <p>i can help you build easy-to-use, beautiful products</p> <!--The <p> tag defines a paragraph. -->
-                <p>from sketching out the flow, to quick prototypes, or final assets</p>
+<body>
+    <!--The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc... IDs are used for elements that appear on the page a single time (like a wrapper).-->
+
+    <header class="intro">
+        <!--The <header> element represents a container for introductory content or a set of navigational links. Usually contains a logo, and header tags. -->
+        <a href="main.html">
+            <img src="../assets/html-tag.svg" alt="closing html tag logo">
+        </a>
+        <!--The <img> tag defines an image in an HTML page. It has two required attributes: src and alt. "Src" specifies the URL of an image. "Alt" specifies an alternate text for an image-->
+        <h1>hello! i am Cristina, a</h1>
+        <!--There's 6 different html headings with 1 being the most important, and 6 being the least important.-->
+        <h2>UX + UI DEVELOPER</h2>
+    </header>
+
+    <section class="flex-grid purpose">
+        <div class="col">
+            <p>i can help you build easy-to-use, beautiful products</p>
+            <!--The <p> tag defines a paragraph. -->
+            <p>from sketching out the flow, to quick prototypes, or final assets</p>
+        </div>
+        <div class="col">
+            <div class="col-wrap">
+                <img class="monitor-icon" src="../assets/monitor.svg" alt="monitor icon">
+                <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
+                <img class="smartphone-icon" src="../assets/smartphone.svg" alt="smartphone icon">
             </div>
-            <div class="col">
-                <div class="col-wrap">
-                    <img class="monitor-icon" src="../assets/monitor.svg" alt="monitor icon"> <!-- In this example the file path points to a file in the assets folder located in the folder one level above the current folder: -->
-                    <img class="smartphone-icon" src="../assets/smartphone.svg" alt="smartphone icon">
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="flex-grid about-me">
-            <div class="col">
-                <div class="col-wrap">
-                    <img class="cardinal-logo" src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
-                    <img class="gdi-logo" src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
-                </div>
+    <section class="flex-grid about-me">
+        <div class="col">
+            <div class="col-wrap">
+                <img class="cardinal-logo" src="../assets/cardinalsolutions-logo.png" alt="Cardinal Solutions logo">
+                <img class="gdi-logo" src="../assets/gdi-clt-badge.png" alt="Girl Develop It logo">
             </div>
-            <div class="col">
-                <p>i currently work as a consultant for 
-                    <a class="cs-link" href="https://www.cardinalsolutions.com/">Cardinal Solutions</a> <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.-->
-                </p> 
-                <p>i’m also the Charlotte chapter leader for the non-profit group ~ 
-                    <a class="gdi-link" href="https://www.girldevelopit.com/chapters/charlotte">Girl Develop It</a>
-                </p>
-            </div>
-        </section>
+        </div>
+        <div class="col">
+            <p>i currently work as a consultant for
+                <a class="cs-link" href="https://www.cardinalsolutions.com/">Cardinal Solutions</a>
+                <!--The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.-->
+            </p>
+            <p>i’m also the Charlotte chapter leader for the non-profit group ~
+                <a class="gdi-link" href="https://www.girldevelopit.com/chapters/charlotte">Girl Develop It</a>
+            </p>
+        </div>
+    </section>
 
-        <section class="call-to-action">
-            <div class="action-texts">
-                <p>i am always looking for exciting projects to work on</p>
-                <p>both freelance and consulting</p>
-            </div>
-            <a href="mailto:cristinaveale@gmail.com?Subject=Let's%20Connect" target="_top">
-                <button type="button" name="email">Get in touch ></button>
-            </a> 
-            <!--The <button> tag defines a clickable button.Type specifies what type of button it is.The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript. The mailto: link activates the default mail client on the computer for sending an e-mail. The subject defines what will go in the subject header. Spaces between words should be replaced by %20 to ensure that the browser will display the text properly. Target specifies where to open the linked document, in this case we want it to open in the full body of the window.-->
-        </section>
+    <section class="call-to-action">
+        <div class="action-texts">
+            <p>i am always looking for exciting projects to work on</p>
+            <p>both freelance and consulting</p>
+        </div>
+        <a href="mailto:cristinaveale@gmail.com?Subject=Let's%20Connect" target="_top">
+            <button type="button" name="email">Get in touch ></button>
+        </a>
+        <!--The <button> tag defines a clickable button.Type specifies what type of button it is.The name attribute is used to reference form-data after the form has been submitted, or to reference the element in a JavaScript. The mailto: link activates the default mail client on the computer for sending an e-mail. The subject defines what will go in the subject header. Spaces between words should be replaced by %20 to ensure that the browser will display the text properly. Target specifies where to open the linked document, in this case we want it to open in the full body of the window.-->
+    </section>
 
-        <footer class="social-media"> <!--The <footer> tag defines a footer for a document or section. They usually contain authorship information, contact info, etc.-->
-            <ul class="social-media-list"> <!--An unordered list will give you a bulleted list. An <ol> will give you an ordered numbered list. Always use unordered lists for link lists shown below. -->
-                <li>Follow me on</li> <!-- li stands for list items within your unordered list. These are the bullet points which we will format using CSS -->
-                <li><a href="https://twitter.com/cristina_veale">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/cristinaveale/">LinkedIn</a></li>
-                <li><a href="https://www.meetup.com/members/182628468/">Meetup</a></li>
-            </ul>
-        </footer>
-    </body>
+    <footer class="social-media">
+        <!--The <footer> tag defines a footer for a document or section. They usually contain authorship information, contact info, etc.-->
+        <ul class="social-media-list">
+            <!--An unordered list will give you a bulleted list. An <ol> will give you an ordered numbered list. Always use unordered lists for link lists shown below. -->
+            <li>Follow me on</li>
+            <!-- li stands for list items within your unordered list. These are the bullet points which we will format using CSS -->
+            <li>
+                <a href="https://twitter.com/cristina_veale">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/cristinaveale/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.meetup.com/members/182628468/">Meetup</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
